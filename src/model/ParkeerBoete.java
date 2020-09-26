@@ -3,9 +3,9 @@ package model;
 /**
  * @author Stefan van Tilburg
  * <p>
- * Opdracht
+ * Opdracht 4.2 Verkeersboetes
  * <p>
- * Doel
+ * Doel     Class ParkeerBoetse, Sub class van Verkeersboete. Boete op basis van zone 1, 2, 3
  */
 public class ParkeerBoete extends VerkeersBoete {
     private int zone;
