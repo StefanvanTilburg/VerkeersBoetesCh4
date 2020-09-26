@@ -23,11 +23,11 @@ public class VerkeersBoete {
     private VerkeersBoete(String naamDader, String kentekenAuto, double bedrag) {
         this.naamDader = naamDader;
         this.kentekenAuto = kentekenAuto;
-        this.bedrag = bedrag;
+        this.setBedrag(bedrag);
     }
 
-    public double bepaalBedrag() {
-        return 0.0;
+    public void bepaalBedrag() {
+        System.out.println("0");
     }
 
     @Override
