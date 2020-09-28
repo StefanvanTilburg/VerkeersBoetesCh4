@@ -7,17 +7,19 @@ package model;
  * <p>
  * Doel     Class VerkeersBoete. Registratie : naamOvertreder, kenteken, bedrag
  */
-public class VerkeersBoete {
+public abstract class VerkeersBoete {
+    private static final String DEFAULT_STRING_WAARDE = "Onbekend";
+    private static final double DEFAULT_DOUBLE_WAARDE = 0.0;
     private String naamDader;
     private String kentekenAuto;
     private double bedrag;
 
     public VerkeersBoete() {
-        this("Onbekend", "XX-XX-XX");
+        this(DEFAULT_STRING_WAARDE, DEFAULT_STRING_WAARDE);
     }
 
     public VerkeersBoete(String naamDader, String kentekenAuto) {
-        this(naamDader, kentekenAuto, 0.0);
+        this(naamDader, kentekenAuto, DEFAULT_DOUBLE_WAARDE);
     }
 
     private VerkeersBoete(String naamDader, String kentekenAuto, double bedrag) {
@@ -26,9 +28,7 @@ public class VerkeersBoete {
         this.setBedrag(bedrag);
     }
 
-    public void bepaalBedrag() {
-        System.out.println("0");
-    }
+    public abstract void bepaalBedrag();
 
     @Override
     public String toString(){

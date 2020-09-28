@@ -13,10 +13,6 @@ import model.VerkeersBoete;
  */
 public class VerkeersBoetesLauncher {
     public static void main(String[] args) {
-        VerkeersBoete verkeersBoete = new VerkeersBoete("Hallo","EersteDader");
-        System.out.println(verkeersBoete.toString());
-        System.out.println();
-
         ParkeerBoete parkeerBoete = new ParkeerBoete("Test", "xx-xx-MINE",2);
         System.out.println(parkeerBoete.toString());
         System.out.println();

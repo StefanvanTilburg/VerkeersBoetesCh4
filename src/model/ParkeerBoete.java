@@ -23,10 +23,10 @@ public class ParkeerBoete extends VerkeersBoete {
         final double ZONE_3_BEDRAG = 180;
 
         switch (this.getZone()) {
+            default:
             case 1:     super.setBedrag(ZONE_1_BEDRAG); break;
             case 2:     super.setBedrag(ZONE_2_BEDRAG); break;
             case 3:     super.setBedrag(ZONE_3_BEDRAG); break;
-            default:    super.setBedrag(ZONE_1_BEDRAG); break;
         }
     }
 
